@@ -16,7 +16,7 @@ function currentLine(curLine) {
     return "The line is currently empty.";
   } else {
     let lineStr = `The line is currently: 1. ${curLine[0]}`;
-    for(let i = 1; curLine.length; i++) {
+    for(let i = 1; i < curLine.length; i++) {
       lineStr = lineStr + `, ${i + 1}. ${curLine[i]}`;
     }
     return lineStr;
