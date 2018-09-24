@@ -4,5 +4,17 @@ function takeANumber(curLine, newName) {
 }
 
 function nowServing(curLine) {
-  curLine.
+  if(curLine.length < 1) {
+    return "There is nobody waiting to be served!";
+  } else {
+    return curLine.shift();
+  }
+}
+
+function currentLine(curLine) {
+  if(curLine.length < 1) {
+    return "The line is currently empty."
+  } else {
+    
+  }
 }
