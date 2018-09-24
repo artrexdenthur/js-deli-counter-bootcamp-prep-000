@@ -13,8 +13,12 @@ function nowServing(curLine) {
 
 function currentLine(curLine) {
   if(curLine.length < 1) {
-    return "The line is currently empty."
+    return "The line is currently empty.";
   } else {
-    
+    lineStr = `The line is currently: 1. ${curLine[0]}`;
+    for(let i = 1; curLine.length; i++) {
+      lineStr = lineStr + `, ${i + 1}. ${curLine[i]}`;
+    }
+    return lineStr;
   }
 }
